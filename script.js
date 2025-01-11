@@ -4,6 +4,7 @@ const addButtons = (array, parentElement) => {
 	for (const value of array) {
 		let button = document.createElement('button')
 		button.textContent = value
+		button.setAttribute('type', 'button')
 		parentElement.appendChild(button)
 	}
 	return parentElement
@@ -14,3 +15,8 @@ const symbols = ['+', '-', '*', '/']
 
 numberPad = addButtons(numbers, numberPad)
 numberPad = addButtons(symbols, numberPad)
+
+let equalButton = document.createElement('button')
+equalButton.textContent = '='
+equalButton.setAttribute('type', 'submit')
+numberPad.appendChild(equalButton)
