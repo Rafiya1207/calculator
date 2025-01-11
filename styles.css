@@ -1,0 +1,29 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.calculator {
+	width: 200px;
+	border: 2px solid black;
+	padding: 1rem;
+	margin: auto ;
+}
+
+#number-pad {
+	display: flex;
+	flex-wrap: wrap;
+	button{
+		width: 50px;
+		aspect-ratio: 1/1;
+		font-size: 1.5rem;
+		border-radius: 10px;
+		margin: 0.5rem;
+	}
+}
+
+.screen {
+	width: 100%;
+	height: 50px;
+	border: 2px solid black;
+}
